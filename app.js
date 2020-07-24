@@ -36,7 +36,7 @@ app.get("/detail", function (req, res) {
 app.post("/procesar-pago", function (req, res) {
   let picture_url = req.body.img.replace(
     "./",
-    "https://sgotta-mp-commerce-nodejs.herokuapp.com/"
+    "https://sgotta-mp-ecommerce-nodejs.herokuapp.com/"
   );
 
   // Crea un objeto de preferencia
@@ -80,13 +80,13 @@ app.post("/procesar-pago", function (req, res) {
     ],
     external_reference: "simon.gotta@gmail.com",
     back_urls: {
-      success: `https://sgotta-mp-commerce-nodejs.herokuapp.com/success`,
-      failure: "https://sgotta-mp-commerce-nodejs.herokuapp.com/failure",
-      pending: "https://sgotta-mp-commerce-nodejs.herokuapp.com/pending",
+      success: `https://sgotta-mp-ecommerce-nodejs.herokuapp.com/success`,
+      failure: "https://sgotta-mp-ecommerce-nodejs.herokuapp.com/failure",
+      pending: "https://sgotta-mp-ecommerce-nodejs.herokuapp.com/pending",
     },
     auto_return: "approved",
     notification_url:
-      "https://sgotta-mp-commerce-nodejs.herokuapp.com/notifications",
+      "https://sgotta-mp-ecommerce-nodejs.herokuapp.com/notifications",
   };
 
   mercadopago.preferences
