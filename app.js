@@ -45,14 +45,9 @@ app.post("/procesar-pago", function (req, res) {
       name: "Lalo",
       surname: "Landa",
       email: "test_user_63274575@testuser.com",
-      date_created: "",
       phone: {
         area_code: "11",
         number: 22223333,
-      },
-      identification: {
-        type: "",
-        number: "",
       },
       address: {
         street_name: "False",
